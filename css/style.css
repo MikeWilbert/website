@@ -1,0 +1,81 @@
+:root{
+
+  --color1: #234d80;
+  --color2: #c5d8ef;
+  --color3: #f6f9fd;
+
+  --txtcolor: black;
+
+  --font1: 'Molengo', Georgia, Times, serif;
+  --font2: 'Lekton', Helvetica, Arial, sans-serif;
+
+}
+
+h1 {
+  font-family: 'Droid Serif', Georgia, Times, serif;
+}
+h2, p, div {
+  font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+}
+
+body {
+
+  padding-top: 20px;
+  padding-bottom:  40px;
+
+}
+
+.container-narrow {
+  margin: 0 auto;
+  max-width: 800px;
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+.jumbotron{
+
+  text-align: center;
+
+  padding: 20px;
+
+}
+
+.card{
+
+  transition-duration: 0.3s;
+  transition-delay: 0.1s;
+  transition-timing-function: linear;
+
+}
+
+.card:hover{
+
+  background-color: #d6eaf8;
+
+}
+
+.dropdown:hover>.dropdown-menu {
+  display: block;
+} 
+
+.card{
+
+  overflow: hidden; 
+  position: relative;
+
+}
+
+.card-img-top{
+
+  transition-duration: 0.3s;
+  transition-delay: 0.1s;
+  transition-timing-function: linear;
+
+}
+
+.card:hover>.card-img-top{
+
+  scale: 1.01;
+
+}
