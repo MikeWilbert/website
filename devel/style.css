@@ -1,0 +1,143 @@
+:root{
+
+  --color1: #234d80;
+  --color2: #c5d8ef;
+  --color3: #f6f9fd;
+
+  --txtcolor: black;
+
+  --font1: 'Molengo', Georgia, Times, serif;
+  --font2: 'Lekton', Helvetica, Arial, sans-serif;
+
+}
+
+h1 {
+  font-family: 'Droid Serif', Georgia, Times, serif;
+}
+h2, p, div {
+  font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+}
+
+*{
+
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+
+  background-color: var(--color1);
+  color: var(--txtcolor);
+  font-family: var(--font2);
+  background: url(https://www.toptal.com/designers/subtlepatterns/uploads/cork-board.png ) repeat 0 0;
+
+}
+
+.grid-container{
+
+  display: grid;
+  grid-template-columns: 10% 90%;
+  grid-template-rows: 15% 75% 10%;
+  width: 100vw;
+  height: 100vh;
+  align-items: stretch;
+}
+
+.grid_element{
+
+  padding: 10px;
+  margin:  10px;
+  background-color: var(--color2);
+  border-radius: 5px;
+
+
+}
+
+#header{
+
+  grid-column: 1/3;
+  grid-row: 1/2;
+
+  text-align: center;
+  align-content: center;
+
+  position:sticky;
+  top:0;
+
+  background-image: url(./NS_Turbulence_N1024_kf5.png);
+  box-shadow: 0 0 1em 1em #ccc;
+
+}
+
+#header h1{
+
+  background-color: var(--color2);
+  color: var(--txtcolor);
+  padding:0;
+
+}
+
+
+#footer{
+
+  grid-column:1/3;
+  grid-row: 3/4;
+
+  text-align: left;
+  align-content: center;
+
+}
+
+#sidebar{
+
+  grid-column: 1/2;
+  grid-row: 2/3;
+
+  text-align: center;
+  align-content: center;
+
+}
+
+#main{
+
+  grid-column: 2/3;
+  grid-row: 2/3;
+
+  background-color: var(--color3); 
+
+  padding: 2em;
+  overflow: scroll;
+}
+
+#navigator{
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  align-content: center;
+
+}
+
+#navigator li a {
+
+  display: block;
+  text-decoration: none;
+  color: var(--txtcolor);
+  padding: 2em 0;
+
+}
+
+#navigator li a:hover{
+
+  background-color: goldenrod;
+  color: red;
+
+}
+
+h2{
+
+  padding: 1em 0;
+
+}

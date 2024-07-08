@@ -11,6 +11,10 @@
 
 }
 
+a {
+  text-decoration: none;
+}
+
 h1 {
   font-family: 'Droid Serif', Georgia, Times, serif;
 }
@@ -22,6 +26,15 @@ body {
 
   padding-top: 20px;
   padding-bottom:  40px;
+
+}
+
+.link_btn{
+
+  background-color: var(--color1);
+  border-style: none;
+  transition-duration: 0.2s;
+  width: 150px;
 
 }
 
@@ -78,4 +91,39 @@ body {
 
   scale: 1.01;
 
+}
+
+/* From Markdown style sheet */
+
+table {
+	border-collapse: collapse;
+	margin-bottom: 0.7em;
+}
+
+th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+th,
+td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0;
+	padding: 2px 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+	border-radius: 2px;
+}
+
+code {
+	font-family: var(--vscode-editor-font-family, "SF Mono", Monaco, Menlo, Consolas, "Ubuntu Mono", "Liberation Mono", "DejaVu Sans Mono", "Courier New", monospace);
+	font-size: 1em;
+	line-height: 1.357em;
 }
